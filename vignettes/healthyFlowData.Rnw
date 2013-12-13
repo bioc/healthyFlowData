@@ -1,0 +1,62 @@
+%\VignetteIndexEntry{healthyFlowData: A healthy dataset with 20 flow cytometry samples used by the flowMatch package}
+%\VignetteDepends{healthyFlowData}
+%\VignetteKeywords{flowMatch, Matching, metaclustering}
+%\VignettePackage{healthyFlowData}
+
+\documentclass{article}
+\usepackage{cite, hyperref, booktabs, graphicx}
+\newcommand{\Rpackage}[1]{{\textsf{#1}}}
+
+\title{healthyFlowData: A healthy dataset with 20 flow cytometry samples used by the flowMatch package}
+\author{Ariful Azad}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\setkeys{Gin}{width=1.0\textwidth, height=1.1\textwidth}
+
+\maketitle
+\begin{center}
+{\tt aazad@purdue.edu}
+\end{center}
+
+\textnormal{\normalfont}
+
+
+\tableofcontents
+
+<<echo=FALSE, eval=TRUE>>=
+options(width=70)
+@
+
+
+\section{Data Introduction}\label{sec:intro}
+
+This package provides a lightweight dataset for those wishing to try out the examples within the \Rpackage{flowFIt} package.
+
+
+Peripheral blood mononuclear cells (PBMC) were collected from four healthy individuals. 
+Each sample was divided five repplicates and each replicate was stained using labeled antibodies against CD3, CD4, CD8, and CD19 protein markers.
+Therefore we have total 20 samples from four healthy subjects.
+Each sample was compensated and transformed in order to stabilize per-channel variance.
+Each sample is then gated on the forward and side scatter to identify lymphocites. 
+Hence the samples contain only lymphocites cells.
+
+This is a part of a larger dataset consisting of 65 samples.
+Please ask the author if you would like to obtain the complete dataset.
+
+
+
+\section{Loading the data}\label{sec:load}
+
+The healthy donor (HD) dataset can be loaded using the {\tt data} function.
+
+<<Loading, echo=TRUE, resuls=verbatim>>==
+library(healthyFlowData)
+data(hd)
+hd.flowSet
+
+@
+
+
+
+\end{document}
