@@ -1,12 +1,12 @@
 Package: healthyFlowData
 Type: Package
 Title: Healthy dataset used by the flowMatch package
-Version: 1.5.0
+Version: 1.5.1
 Date: 2013-10-29
 Author: Ariful Azad
 Maintainer: Ariful Azad <aazad@purdue.edu>
 Description: A healthy dataset with 20 flow cytometry samples used by the flowMatch package.
 License: Artistic-2.0
-biocViews: FlowCytometry, CellBasedAssays, Bioinformatics
+biocViews: FlowCytometryData
 Depends: R (>= 2.15.0), flowCore
 Imports: methods
