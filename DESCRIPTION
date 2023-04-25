@@ -1,7 +1,7 @@
 Package: healthyFlowData
 Type: Package
 Title: Healthy dataset used by the flowMatch package
-Version: 1.38.0
+Version: 1.39.0
 Date: 2013-10-29
 Author: Ariful Azad
 Maintainer: Ariful Azad <aazad@purdue.edu>
